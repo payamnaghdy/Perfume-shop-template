@@ -26,3 +26,9 @@ See [Configuring quasar.conf.js](https://quasar.dev/quasar-cli/quasar-conf-js).
 
 ### Header
 ![](perfume-template/screenshots/Header.png)
+
+### Items
+![](perfume-template/screenshots/items.png)
+
+### Items_expanded
+![](perfume-template/screenshots/items_expanded.png)
