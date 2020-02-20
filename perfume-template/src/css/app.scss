@@ -1,0 +1,28 @@
+// app global css in SCSS form
+@font-face {
+  font-family: customfont;
+  src: url("../statics/fonts/Quentin.ttf");
+}
+// declare a class which applies it
+
+.quentin-font {
+  font-family: 'customfont';
+}
+@font-face {
+  font-family: heli;
+  src: url("../statics/fonts/Sweet Hipster.ttf");
+}
+// declare a class which applies it
+
+.heli-font {
+  font-family: 'heli';
+}
+@font-face {
+  font-family: Lacquer;
+  src: url("../statics/fonts/Lacquer-Regular.ttf");
+}
+// declare a class which applies it
+
+.Lacquer-font {
+  font-family: 'Lacquer';
+}
