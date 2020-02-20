@@ -54,6 +54,39 @@
         <q-carousel-slide :name="4" img-src="https://www.amouage.com/media/newhomepages/_LoveMimosa_Web_Landscape-2.png" />
       </q-carousel>
     </div>
+    <div class="row-wrap">
+      <div class="q-pa-xl" v-for="item in items">
+        <q-card class="my-card" flat>
+          <q-img src="../assets/tomf.jpg" />
+
+          <q-card-section>
+            <div class="text-overline text-orange-9">Overline</div>
+            <div class="text-h5 q-mt-sm q-mb-xs">Title</div>
+            <div class="text-caption text-secondary">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </div>
+          </q-card-section>
+
+          <q-card-actions>
+            <q-btn flat color="secondary" label="Add to cart" />
+
+            <q-space />
+
+            <q-btn color="grey" round flat dense :icon="item.expanded ? 'keyboard_arrow_up' : 'keyboard_arrow_down'" @click="item.expanded = !item.expanded" />
+          </q-card-actions>
+
+          <q-slide-transition>
+            <div v-show="item.expanded">
+              <q-separator />
+              <q-card-section class="text-subitle2">
+                {{ item.lorem }}
+              </q-card-section>
+            </div>
+          </q-slide-transition>
+        </q-card>
+      </div>
+
+    </div>
   </q-page-container>
 </q-layout>
 </template>
@@ -71,7 +104,36 @@ export default {
   data() {
     return {
       cart: 0,
-      slide: 1
+      slide: 1,
+      items: [{
+          expanded: false,
+          lorem: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+        },
+        {
+          expanded: false,
+          lorem: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+        },
+        {
+          expanded: false,
+          lorem: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+        },
+        {
+          expanded: false,
+          lorem: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+        },
+        {
+          expanded: false,
+          lorem: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+        },
+        {
+          expanded: false,
+          lorem: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+        },
+        {
+          expanded: false,
+          lorem: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+        },
+      ]
 
     }
   }
@@ -104,5 +166,13 @@ export default {
     display: flex;
     justify-content: space-between;
 }
-.carousel {}
+.my-card {
+    width: 100%;
+    max-width: 450px;
+}
+.row-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
 </style>
