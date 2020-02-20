@@ -31,4 +31,4 @@ See [Configuring quasar.conf.js](https://quasar.dev/quasar-cli/quasar-conf-js).
 ![](perfume-template/screenshots/items.png)
 
 ### Items_expanded
-![](perfume-template/screenshots/item_expanded.png)
+![](perfume-template/screenshots/item_expanded.jpg)
