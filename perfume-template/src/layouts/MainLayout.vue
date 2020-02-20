@@ -168,7 +168,7 @@ export default {
 }
 .my-card {
     width: 100%;
-    max-width: 350px;
+    max-width: 450px;
 }
 .row-wrap {
     display: flex;
