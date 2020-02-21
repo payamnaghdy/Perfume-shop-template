@@ -4,6 +4,7 @@ A perfume shop template using quasar and vue js
 
 ## Install the dependencies
 ```bash
+cd perfume-template/
 yarn
 ```
 
